@@ -162,7 +162,7 @@ export default function AdminPage() {
               <tbody className="divide-y divide-gray-100">
                 {edited.map(rate => {
                   const meta = RATE_META[rate.code] || { name: rate.code, flag: "🏳" };
-                  const spread = (rate.buy - rate.sell).toFixed(3);
+                  const spread = (rate.sell - rate.buy).toFixed(3);
                   return (
                     <tr key={rate.code} className="hover:bg-gray-50 transition-colors">
                       <td className="py-3 px-4">
