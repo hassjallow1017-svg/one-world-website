@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T16:20:44.842Z",
+  "updatedAt": "2026-06-26T16:25:51.858Z",
   "updatedBy": "Admin",
   "rates": [
     {
@@ -19,8 +19,8 @@
     },
     {
       "code": "CHF",
-      "buy": 79.3,
-      "sell": 78.5
+      "buy": 90,
+      "sell": 91
     },
     {
       "code": "SEK",
