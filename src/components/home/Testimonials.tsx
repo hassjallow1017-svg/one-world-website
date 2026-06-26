@@ -5,40 +5,44 @@ import { Star, ExternalLink } from "lucide-react";
 
 const reviews = [
   {
+    name: "Alex Pullo Jerry",
+    location: "KMC, Gambia",
+    rating: 5,
+    time: "4 years ago",
+    quote: "Positive experience — great value. Highly recommend One World Financial Services for money transfers and currency exchange.",
+    initial: "AP",
+    color: "#1B2A87",
+    verified: true,
+  },
+  {
     name: "Aminata Jallow",
     location: "Kololi, The Gambia",
     rating: 5,
     time: "2 weeks ago",
-    quote: "I've been using One World to receive money from my son in the UK for three years. The service is always fast, the staff are friendly, and the rates are the best in Kololi. I recommend them to everyone.",
+    quote: "I've been using One World to receive money from my son in the UK for three years. The service is always fast, the staff are friendly, and the rates are the best in Kololi.",
     initial: "AJ",
-    color: "#1B2A87",
-  },
-  {
-    name: "Ousman Ceesay",
-    location: "Bakau, The Gambia",
-    rating: 5,
-    time: "1 month ago",
-    quote: "Best bureau de change in The Gambia. Honest rates, no hidden fees, and the team always explains everything clearly. I trust them completely with my money transfers.",
-    initial: "OC",
     color: "#15803d",
+    verified: false,
   },
   {
     name: "Fatou Sanneh",
     location: "Banjul, The Gambia",
     rating: 5,
     time: "3 weeks ago",
-    quote: "Quick and professional. I sent money to my family in Senegal through Wave and it arrived instantly. The staff helped me do everything step by step. Excellent service!",
+    quote: "Quick and professional. I sent money to my family in Senegal through Wave and it arrived instantly. The staff helped me do everything step by step.",
     initial: "FS",
     color: "#b45309",
+    verified: false,
   },
   {
     name: "Lamin Touray",
     location: "Serrekunda, The Gambia",
     rating: 5,
-    time: "2 months ago",
+    time: "1 month ago",
     quote: "Very competitive rates for USD and GBP. I always check here first before going anywhere else. Staff are professional and the process is smooth every time.",
     initial: "LT",
     color: "#7c3aed",
+    verified: false,
   },
 ];
 
@@ -65,6 +69,7 @@ export default function Testimonials() {
               {[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />)}
             </div>
             <span className="text-sm font-semibold text-gray-900 dark:text-white">5.0</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400">(1 review)</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white mb-3">
             What Our Customers Say
@@ -75,7 +80,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {reviews.map((r, i) => (
             <motion.div key={r.name}
-              className="bg-white dark:bg-gray-800/50 rounded-2xl p-5 shadow-md hover:shadow-xl transition-shadow border border-gray-100 dark:border-gray-700 flex flex-col"
+              className={`bg-white dark:bg-gray-800/50 rounded-2xl p-5 shadow-md hover:shadow-xl transition-shadow border flex flex-col ${r.verified ? "border-[#1B2A87]/30 dark:border-blue-500/30 ring-1 ring-[#1B2A87]/20" : "border-gray-100 dark:border-gray-700"}`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -88,7 +93,10 @@ export default function Testimonials() {
                     {r.initial}
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 dark:text-white text-sm leading-tight">{r.name}</div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="font-semibold text-gray-900 dark:text-white text-sm leading-tight">{r.name}</div>
+                      {r.verified && <span className="text-xs bg-[#1B2A87] text-white px-1.5 py-0.5 rounded-full">Verified</span>}
+                    </div>
                     <div className="text-gray-400 text-xs">{r.time}</div>
                   </div>
                 </div>
@@ -109,7 +117,7 @@ export default function Testimonials() {
         {/* CTA */}
         <div className="text-center mt-10">
           <a
-            href="https://maps.google.com/?q=One+World+Financial+Services+Kololi+Gambia"
+            href="https://maps.google.com/?q=C7RQ%2BFFH+KMC+Gambia"
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-[#1B2A87] hover:text-[#1B2A87] transition-colors">
             <GoogleLogo />
