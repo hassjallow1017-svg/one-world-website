@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/tmac/Desktop/CODE/ONE WORLD/.claude\")"
+    ]
+  }
+}
