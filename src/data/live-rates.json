@@ -1,20 +1,76 @@
 {
-  "updatedAt": "2026-06-26T08:00:00.000Z",
+  "updatedAt": "2026-06-26T16:14:54.725Z",
   "updatedBy": "Admin",
   "rates": [
-    { "code": "USD", "buy": 71.50, "sell": 70.80 },
-    { "code": "EUR", "buy": 77.20, "sell": 76.40 },
-    { "code": "GBP", "buy": 90.50, "sell": 89.60 },
-    { "code": "CHF", "buy": 79.30, "sell": 78.50 },
-    { "code": "SEK", "buy": 6.80,  "sell": 6.60  },
-    { "code": "NOK", "buy": 6.70,  "sell": 6.50  },
-    { "code": "DKK", "buy": 10.30, "sell": 10.10 },
-    { "code": "CAD", "buy": 52.80, "sell": 52.10 },
-    { "code": "SAR", "buy": 19.05, "sell": 18.80 },
-    { "code": "AED", "buy": 19.45, "sell": 19.20 },
-    { "code": "CNY", "buy": 9.85,  "sell": 9.65  },
-    { "code": "XOF", "buy": 0.118, "sell": 0.115 },
-    { "code": "NGN", "buy": 0.045, "sell": 0.043 },
-    { "code": "GHS", "buy": 4.85,  "sell": 4.70  }
+    {
+      "code": "USD",
+      "buy": 73,
+      "sell": 74
+    },
+    {
+      "code": "EUR",
+      "buy": 84,
+      "sell": 85
+    },
+    {
+      "code": "GBP",
+      "buy": 97,
+      "sell": 98
+    },
+    {
+      "code": "CHF",
+      "buy": 79.3,
+      "sell": 78.5
+    },
+    {
+      "code": "SEK",
+      "buy": 6.8,
+      "sell": 6.6
+    },
+    {
+      "code": "NOK",
+      "buy": 6.7,
+      "sell": 6.5
+    },
+    {
+      "code": "DKK",
+      "buy": 10.3,
+      "sell": 10.1
+    },
+    {
+      "code": "CAD",
+      "buy": 52.8,
+      "sell": 52.1
+    },
+    {
+      "code": "SAR",
+      "buy": 19.05,
+      "sell": 18.8
+    },
+    {
+      "code": "AED",
+      "buy": 19.45,
+      "sell": 19.2
+    },
+    {
+      "code": "CNY",
+      "buy": 9.85,
+      "sell": 9.65
+    },
+    {
+      "code": "XOF",
+      "buy": 0.118,
+      "sell": 0.115
+    },
+    {
+      "code": "NGN",
+      "buy": 0.045,
+      "sell": 0.043
+    },
+    {
+      "code": "GHS",
+      "buy": 4.85,
+      "sell": 4.7
+    }
   ]
 }
